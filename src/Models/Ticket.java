@@ -3,10 +3,12 @@ package Models;
 import java.util.Date;
 
 public class Ticket extends BaseModel {
-    private  String number;
+    private String number;
     private Date entryTime;
     private Vehicle vehicle;
     private ParkingSpot assignedSpot;
+    private Gate generatedAt;
+    private Operator generatedBy;
 
     public Gate getGeneratedAt() {
         return generatedAt;
@@ -55,7 +57,4 @@ public class Ticket extends BaseModel {
     public void setGeneratedBy(Operator generatedBy) {
         this.generatedBy = generatedBy;
     }
-
-    private Gate generatedAt;
-    private Operator generatedBy;
 }
