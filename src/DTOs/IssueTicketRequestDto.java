@@ -39,3 +39,4 @@ public class IssueTicketRequestDto {
     public void setGateId(Long gateId) {
 
     }
+}
